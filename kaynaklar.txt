@@ -1,0 +1,38 @@
+https://github.com/yakintech/techcareer-full-stack-part-1
+
+
+css selectors
+https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+
+Adem İlter Box Model Video
+https://www.youtube.com/watch?v=dTUtsy54eP0
+
+
+flex kaynaklar
+https://www.w3schools.com/css/css3_flexbox.asp
+
+
+css ölçü birimleri
+https://medium.com/baakademi/cssde-%C3%B6l%C3%A7%C3%BC-ve-uzunluk-birimleri-6563c2ee9853
+
+
+sass döküman
+https://sass-lang.com/documentation/
+https://gist.github.com/AdamMarsden/7b85e8d5bdb5bef969a0
+https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
+
+
+js let ile var farkı
+https://stackoverflow.com/questions/762011/what-is-the-difference-between-let-and-var
+
+js style guide
+https://www.w3schools.com/js/js_conventions.asp
+
+
+js Arrow Function
+https://www.w3schools.com/js/js_arrow_function.asp
+
+
+Jquery tutorial
+https://www.youtube.com/watch?v=ynG3u3I669o&list=PLWctyKyPphPgqzd2Np8VlKiXhkpAjSV0c

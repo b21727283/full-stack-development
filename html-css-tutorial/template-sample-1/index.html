@@ -6,23 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/2.3.0/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 
     <style>
+
+        p{
+
+            text-align: center;
+        }
+
+        .container{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* flex-grow: 1; */
+            align-items: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 70%;
+            
+        }
+
+        .main{
+            display: flex;
+        }
+        nav{
+            background-color: #BD5D38;
+            width: 20%;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        nav img{
+
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 0.5rem solid rgba(255, 255, 255, 0.2);
+        }
+
+        .container i{
+            font-size: 56px;
+            color: grey;
+            
+        }
+
+        .container i:hover{
+            color: #bd5d38;
+        }
 
 
     </style>
 </head>
 <body>
+    <div class="main">
 
-    <nav>
+        <nav>
+
+            <img src="images/profile.jpg" alt="aaa">
+            <ul>
+
+                <li>About</li>
+                <li>Experience</li>
+                <li>Education</li>
+                <li>Skills</li>
+                <li>Interests</li>
+                <li>Awards</li>
+                
+                
+                
+
+            </ul>
 
 
-    </nav>
+        </nav>
+    
+        <div class="container">
+            <h1>CLARENCE TAYLOR</h1>
 
-    <div class="container">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam iusto hic sunt illum temporibus asperiores cupiditate harum, cumque eos possimus laudantium nobis, nihil commodi. Laborum optio harum illum cupiditate numquam.</p>
 
+            <div>
+
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+
+            </div>
+
+            
+    
+    
+        </div>
 
     </div>
+
+    
     
 </body>
 </html>
