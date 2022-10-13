@@ -1,0 +1,44 @@
+header{
+
+    @include centerFlex($flexDirection:column);
+
+    background-image: url(./images/home-bg.jpg);
+
+    height: 100vh;
+
+    background-size: cover;
+    
+    h1{
+
+        color: $menuColor;
+
+        margin-bottom: 20px;
+        font-size: 5rem;
+        font-weight: 300;
+        z-index: 1;
+        
+    
+    }
+
+    span{
+        color: $menuColor;
+        font-size: 1.5rem;
+        font-weight: 300;
+        z-index: 1;
+    }
+    
+
+
+}
+
+header::before{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212529;
+    opacity: 0.5;
+}

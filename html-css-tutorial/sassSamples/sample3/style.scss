@@ -1,0 +1,26 @@
+@mixin button($color, $width:100px, $height:100px, $borderColor:yellow) {
+
+    width: $width;
+    height: $height;
+    background-color: $color;
+    border-width: 2px;
+    font-size: 15px;
+    border-color: $borderColor;
+}
+
+.button-1{
+
+    @include button(tomato)
+}
+
+.button-2{
+
+    @include button(aqua, 100px, 100px, gray)
+}
+
+.button-3{
+
+    @extend .button-1;
+    background-color: blue;
+}
+
