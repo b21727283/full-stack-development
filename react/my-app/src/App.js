@@ -1,8 +1,11 @@
 
+import CategoryPage from "./CategoryPage";
 import ChildComponent from "./propSample/ChildComponent";
 import CityList from "./propSample/CityList";
 import ProductDetails from "./propSample/ProductDetails";
 import UserDetail from "./propSample/UserDetail";
+import CounterSample from "./state/CounterSample";
+import ArraySample from "./state/ArraySample";
 
 
 function App() {
@@ -25,10 +28,16 @@ function App() {
 
       { /* <UserDetail name="Musti" surname="Gumusbacak" age = {18}></UserDetail> */}
 
-      <CityList cities= {citiesSource}></CityList>
+      { /* <CityList cities= {citiesSource}></CityList>
       <ChildComponent merhaba={hello}/>
 
-      <ProductDetails name={'Iphone'} stock={10} status={false}></ProductDetails>
+      <ProductDetails name={'Iphone'} stock={10} status={false}></ProductDetails> */}
+
+      {/*<CategoryPage></CategoryPage> */}
+
+      <CounterSample/>
+
+      <ArraySample/>
 
     </>
     
