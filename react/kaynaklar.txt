@@ -1,0 +1,16 @@
+-> import / export
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+
+-> react jsx
+
+https://reactjs.org/docs/introducing-jsx.html
+
+-> react snippets
+
+https://github.com/chillios-ts/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md
+
+-> react default props 
+
+https://blog.logrocket.com/complete-guide-react-default-props/
+
