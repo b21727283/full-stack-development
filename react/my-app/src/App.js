@@ -6,6 +6,10 @@ import ProductDetails from "./propSample/ProductDetails";
 import UserDetail from "./propSample/UserDetail";
 import CounterSample from "./state/CounterSample";
 import ArraySample from "./state/ArraySample";
+import ToggleStateSample from "./state/ToggleStateSample"
+import ToDoList from "./state/ToDoList";
+import CategoryTable from "./state/CategoryTable";
+import ParentCounter from "./state/ParentCounter";
 
 
 function App() {
@@ -33,11 +37,26 @@ function App() {
 
       <ProductDetails name={'Iphone'} stock={10} status={false}></ProductDetails> */}
 
-      {/*<CategoryPage></CategoryPage> */}
-
+      {/*<CategoryPage></CategoryPage> 
+      
       <CounterSample/>
 
       <ArraySample/>
+      <ToggleStateSample/>
+      */}
+
+
+      {/*<ToDoList/>*/}
+
+
+      {/*<CategoryTable/>*/}
+
+      <ParentCounter/>
+
+
+      
+
+      
 
     </>
     

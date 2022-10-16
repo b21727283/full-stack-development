@@ -14,3 +14,8 @@ https://github.com/chillios-ts/vscode-react-javascript-snippets/blob/HEAD/docs/S
 
 https://blog.logrocket.com/complete-guide-react-default-props/
 
+-> thinking in react
+
+https://reactjs.org/docs/thinking-in-react.html
+
+
