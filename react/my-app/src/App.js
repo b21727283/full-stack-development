@@ -4,6 +4,9 @@ import HomePage from "./RouterSample/HomePage";
 import { Link, Route , Routes } from 'react-router-dom';
 import CategoryPage from "./RouterSample/CategoryPage";
 import CategoryDetail from "./RouterSample/CategoryDetail";
+import ChildSample from "./RouterSample/ChildSample";
+import GuardSample from "./RouterSample/GuardSample";
+import LoginPage from "./RouterSample/LoginPage";
 
 
 
@@ -58,12 +61,13 @@ function App() {
 
       <h1>Site Header</h1>
 
-      <ul>
+      <ul style={{display:'flex', justifyContent: 'space-between'}}>
 
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/categories'>Categories</Link></li>
+        <li><Link to='/guardsample'>Guard Sample</Link></li>
 
 
 
@@ -78,6 +82,11 @@ function App() {
         <Route path="/contact" element={<ContactPage/>}></Route>
         <Route path="/categories" element={<CategoryPage/>}></Route>
         <Route path="/categories/:id" element={<CategoryDetail/>}></Route>
+        <Route path="/login" element={<LoginPage/>}></Route>
+        <Route path="/guardsample" element={<GuardSample>
+            <ChildSample/>
+          </GuardSample>}>
+        </Route>
 
 
       </Routes>
