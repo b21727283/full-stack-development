@@ -18,7 +18,7 @@ https://blog.logrocket.com/complete-guide-react-default-props/
 
 https://reactjs.org/docs/thinking-in-react.html
 
--> converting <td> to <input>
+-> converting <td> to <input> * TRY *
 
 https://stackoverflow.com/questions/63505919/how-to-convert-a-td-td-into-input-onclick-in-react
 

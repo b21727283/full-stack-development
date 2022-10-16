@@ -1,16 +1,12 @@
+import AboutPage from "./RouterSample/AboutPage";
+import ContactPage from "./RouterSample/ContactPage";
+import HomePage from "./RouterSample/HomePage";
+import { Link, Route , Routes } from 'react-router-dom';
+import CategoryPage from "./RouterSample/CategoryPage";
+import CategoryDetail from "./RouterSample/CategoryDetail";
 
-import CategoryPage from "./CategoryPage";
-import ChildComponent from "./propSample/ChildComponent";
-import CityList from "./propSample/CityList";
-import ProductDetails from "./propSample/ProductDetails";
-import UserDetail from "./propSample/UserDetail";
-import CounterSample from "./state/CounterSample";
-import ArraySample from "./state/ArraySample";
-import ToggleStateSample from "./state/ToggleStateSample"
-import ToDoList from "./state/ToDoList";
-import CategoryTable from "./state/CategoryTable";
-import ParentCounter from "./state/ParentCounter";
-import InputChangeSample from "./state/InputChangeSample";
+
+
 
 
 function App() {
@@ -54,7 +50,41 @@ function App() {
 
       {/*<ParentCounter/>*/}
 
-      <InputChangeSample/>
+      {/*<InputChangeSample/>*/}
+
+      {/*<ManyRenders/>  infinite loop
+      
+      <SupplierList/>*/}
+
+      <h1>Site Header</h1>
+
+      <ul>
+
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
+        <li><Link to='/about'>About</Link></li>
+        <li><Link to='/categories'>Categories</Link></li>
+
+
+
+      </ul>
+
+      
+
+      <Routes>
+
+        <Route path="/" element={<HomePage/>}></Route>
+        <Route path="/about" element={<AboutPage/>}></Route>
+        <Route path="/contact" element={<ContactPage/>}></Route>
+        <Route path="/categories" element={<CategoryPage/>}></Route>
+        <Route path="/categories/:id" element={<CategoryDetail/>}></Route>
+
+
+      </Routes>
+
+      <h1>Site Footer</h1>
+
+      
 
 
       
