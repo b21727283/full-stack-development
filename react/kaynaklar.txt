@@ -18,4 +18,13 @@ https://blog.logrocket.com/complete-guide-react-default-props/
 
 https://reactjs.org/docs/thinking-in-react.html
 
+-> converting <td> to <input>
+
+https://stackoverflow.com/questions/63505919/how-to-convert-a-td-td-into-input-onclick-in-react
+
+-> updating a specific field of object state
+
+https://stackoverflow.com/questions/71751120/updating-a-specific-field-of-object-state-in-react
+
+
 

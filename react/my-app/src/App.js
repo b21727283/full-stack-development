@@ -10,6 +10,7 @@ import ToggleStateSample from "./state/ToggleStateSample"
 import ToDoList from "./state/ToDoList";
 import CategoryTable from "./state/CategoryTable";
 import ParentCounter from "./state/ParentCounter";
+import InputChangeSample from "./state/InputChangeSample";
 
 
 function App() {
@@ -51,7 +52,9 @@ function App() {
 
       {/*<CategoryTable/>*/}
 
-      <ParentCounter/>
+      {/*<ParentCounter/>*/}
+
+      <InputChangeSample/>
 
 
       
