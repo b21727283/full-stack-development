@@ -13,6 +13,16 @@ import { useContext } from "react";
 import { CardContext } from "./ContextSample/CardContext";
 import Card from "./ContextSample/Card";
 
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less';
+
+import {Layout, Menu} from "antd";
+import {Content, Footer, Header} from "antd/lib/layout/layout";
+
+
+import Customers from "./components/Customers";
+
+
+
 
 
 
@@ -27,6 +37,33 @@ function App() {
 
 
   const {card} = useContext(CardContext)
+
+  // <ul style={{display:'flex', justifyContent: 'space-between'}}>
+
+  //       <li><Link to='/'>Home</Link></li>
+  //       <li><Link to='/contact'>Contact</Link></li>
+  //       <li><Link to='/about'>About</Link></li>
+  //       <li><Link to='/categories'>Categories</Link></li>
+  //       <li><Link to='/guardsample'>Guard Sample</Link></li>
+  //       <li><Link to='/location'>Location Sample</Link></li>
+  //       <li><Link to='/products'>Products</Link></li>
+  //       <li><Link to='/card'>Card</Link></li>
+
+
+
+  //     </ul>
+
+
+  const items = [
+  { label: <Link to='/'>Home</Link>, key: '1' }, // remember to pass the key prop
+  { label: <Link to='/customers'>Customers</Link>, key: '2' }, 
+  { label: 'item 2', key: 'item-2' }, // which is required
+  {
+    label: 'sub menu',
+    key: 'submenu',
+    children: [{ label: 'item 3', key: 'submenu-item-1' }],
+  },
+];
 
 
 
@@ -68,8 +105,71 @@ function App() {
       <SupplierList/>*/}
 
       
+      <Layout>
 
-      <div style={{display:'flex', justifyContent: 'space-around'}}>
+        <Header
+        style={{
+          position: 'fixed',
+          zIndex: 1,
+          width: '100%',
+        }}>
+
+
+        <Menu
+          theme="dark"
+          mode="horizontal"
+          defaultSelectedKeys={['1']}
+          items={items}
+        />
+
+
+
+        </Header>
+
+        <Content
+          className="site-layout"
+          style={{
+            padding: '20px 40px',
+            marginTop: 64,
+          }}
+        >
+          <Routes>
+
+          <Route path="/" element={<HomePage/>}></Route>
+          <Route path="/about" element={<AboutPage/>}></Route>
+          <Route path="/contact" element={<ContactPage/>}></Route>
+          <Route path="/categories" element={<CategoryPage/>}></Route>
+          <Route path="/categories/:id" element={<CategoryDetail/>}></Route>
+          <Route path="/login" element={<LoginPage/>}></Route>
+          <Route path="/guardsample" element={<GuardSample>
+              <ChildSample/>
+            </GuardSample>}>
+          </Route>
+
+          <Route path="/location" element={<LocationSample/>}></Route>
+          <Route path="/products" element={<Products/>}></Route>
+          <Route path="/card" element={<Card/>}></Route>
+          <Route path="/customers" element={<Customers/>}></Route>
+
+          </Routes>
+
+        </Content>
+
+
+
+        <Footer
+
+          style={{
+          textAlign: 'center',
+          }}
+        >
+          Ant Design ©2018 Created by Ant UED
+
+        </Footer>
+
+      </Layout>
+
+      {/* <div style={{display:'flex', justifyContent: 'space-around'}}>
 
       <h1>Site Header</h1>
       <h1>Card Length:  {card.length}</h1>
@@ -79,47 +179,7 @@ function App() {
 
       
 
-      <ul style={{display:'flex', justifyContent: 'space-between'}}>
-
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/categories'>Categories</Link></li>
-        <li><Link to='/guardsample'>Guard Sample</Link></li>
-        <li><Link to='/location'>Location Sample</Link></li>
-        <li><Link to='/products'>Products</Link></li>
-        <li><Link to='/card'>Card</Link></li>
-
-
-
-      </ul>
-
-      
-
-      <Routes>
-
-        <Route path="/" element={<HomePage/>}></Route>
-        <Route path="/about" element={<AboutPage/>}></Route>
-        <Route path="/contact" element={<ContactPage/>}></Route>
-        <Route path="/categories" element={<CategoryPage/>}></Route>
-        <Route path="/categories/:id" element={<CategoryDetail/>}></Route>
-        <Route path="/login" element={<LoginPage/>}></Route>
-        <Route path="/guardsample" element={<GuardSample>
-            <ChildSample/>
-          </GuardSample>}>
-        </Route>
-
-        <Route path="/location" element={<LocationSample/>}></Route>
-        <Route path="/products" element={<Products/>}></Route>
-        <Route path="/card" element={<Card/>}></Route>
-
-
-      </Routes>
-
-      <h1>Site Footer</h1>
-
-      
-
+       */}
 
       
 

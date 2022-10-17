@@ -36,4 +36,10 @@ https://reactrouter.com/en/main/start/tutorial
 https://stackoverflow.com/questions/56028913/usememo-vs-useeffect-usestate
 
 
+-> ui sets
 
+bootstrap, reacr bootstrap, ant design, material ui, tailwind
+
+-> graphql, apollo
+
+-> react style
