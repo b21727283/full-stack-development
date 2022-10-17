@@ -8,6 +8,10 @@ import ChildSample from "./RouterSample/ChildSample";
 import GuardSample from "./RouterSample/GuardSample";
 import LoginPage from "./RouterSample/LoginPage";
 import LocationSample from "./RouterSample/LocationSample";
+import Products from "./ContextSample/Products";
+import { useContext } from "react";
+import { CardContext } from "./ContextSample/CardContext";
+import Card from "./ContextSample/Card";
 
 
 
@@ -20,6 +24,9 @@ function App() {
   const hello = () => {
     alert('Hello React Props!!')
   }
+
+
+  const {card} = useContext(CardContext)
 
 
 
@@ -60,7 +67,17 @@ function App() {
       
       <SupplierList/>*/}
 
+      
+
+      <div style={{display:'flex', justifyContent: 'space-around'}}>
+
       <h1>Site Header</h1>
+      <h1>Card Length:  {card.length}</h1>
+
+
+      </div>
+
+      
 
       <ul style={{display:'flex', justifyContent: 'space-between'}}>
 
@@ -70,6 +87,8 @@ function App() {
         <li><Link to='/categories'>Categories</Link></li>
         <li><Link to='/guardsample'>Guard Sample</Link></li>
         <li><Link to='/location'>Location Sample</Link></li>
+        <li><Link to='/products'>Products</Link></li>
+        <li><Link to='/card'>Card</Link></li>
 
 
 
@@ -91,6 +110,8 @@ function App() {
         </Route>
 
         <Route path="/location" element={<LocationSample/>}></Route>
+        <Route path="/products" element={<Products/>}></Route>
+        <Route path="/card" element={<Card/>}></Route>
 
 
       </Routes>

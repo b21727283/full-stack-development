@@ -31,6 +31,9 @@ https://stackoverflow.com/questions/71751120/updating-a-specific-field-of-object
 
 https://reactrouter.com/en/main/start/tutorial
 
+-> useMemo vs. useEffect + useState
+
+https://stackoverflow.com/questions/56028913/usememo-vs-useeffect-usestate
 
 
 
