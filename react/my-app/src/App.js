@@ -20,6 +20,8 @@ import {Content, Footer, Header} from "antd/lib/layout/layout";
 
 
 import Customers from "./components/Customers";
+import AddCustomer from "./components/AddCustomer";
+import AddProduct from "./components/AddProduct";
 
 
 
@@ -56,13 +58,16 @@ function App() {
 
   const items = [
   { label: <Link to='/'>Home</Link>, key: '1' }, // remember to pass the key prop
-  { label: <Link to='/customers'>Customers</Link>, key: '2' }, 
+  { label: <Link to='/customers'>Customers</Link>, key: '2' },
+  { label: <Link to='/addcustomer'>Add Customer</Link>, key: '3' },
+  { label: <Link to='/addproduct'>Add Product</Link>, key: '4' },
   { label: 'item 2', key: 'item-2' }, // which is required
   {
     label: 'sub menu',
     key: 'submenu',
     children: [{ label: 'item 3', key: 'submenu-item-1' }],
   },
+  
 ];
 
 
@@ -150,6 +155,8 @@ function App() {
           <Route path="/products" element={<Products/>}></Route>
           <Route path="/card" element={<Card/>}></Route>
           <Route path="/customers" element={<Customers/>}></Route>
+          <Route path="/addcustomer" element={<AddCustomer/>}></Route>
+          <Route path="/addproduct" element={<AddProduct/>}></Route>
 
           </Routes>
 
