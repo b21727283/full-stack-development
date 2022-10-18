@@ -22,6 +22,7 @@ import {Content, Footer, Header} from "antd/lib/layout/layout";
 import Customers from "./components/Customers";
 import AddCustomer from "./components/AddCustomer";
 import AddProduct from "./components/AddProduct";
+import AddSupplierWithFormik from "./components/AddSupplierWithFormik";
 
 
 
@@ -61,6 +62,7 @@ function App() {
   { label: <Link to='/customers'>Customers</Link>, key: '2' },
   { label: <Link to='/addcustomer'>Add Customer</Link>, key: '3' },
   { label: <Link to='/addproduct'>Add Product</Link>, key: '4' },
+  { label: <Link to='/addsupplierwithformik'>Add Supplier With Formik</Link>, key: '5' },
   { label: 'item 2', key: 'item-2' }, // which is required
   {
     label: 'sub menu',
@@ -157,6 +159,7 @@ function App() {
           <Route path="/customers" element={<Customers/>}></Route>
           <Route path="/addcustomer" element={<AddCustomer/>}></Route>
           <Route path="/addproduct" element={<AddProduct/>}></Route>
+          <Route path="/addsupplierwithformik" element={<AddSupplierWithFormik/>}></Route>
 
           </Routes>
 

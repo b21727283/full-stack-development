@@ -42,7 +42,12 @@ function AddProduct() {
 
         console.log('VALUES', values)
 
-        axios.post('https://northwind.vercel.app/api/products', values)
+        let data = {
+            name: "Mozzarella di Giovanni",
+            unitPrice: 60
+        }
+
+        axios.put('https://northwind.vercel.app/api/products', data)
         .then(res =>{
 
             console.log('SUCCESS')
