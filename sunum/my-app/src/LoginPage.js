@@ -15,16 +15,18 @@ const LoginPage = () => {
 
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
-    setIsLogged(true)
 
-    navigate("/customers")
-    
+    if(values.email == 'dgpays@mail.com' && values.password == '123'){
+      setIsLogged(true)
+      navigate("/customers")
+      
+    }
+
+    console.log('Wrong credentials!!')
+  
   };
   return (
 
-    <Row justify='center' align='middle' style={{height: '100vh'}}>
-
-    <Col span={24}>
 
     <Form
       name="normal_login"
@@ -33,12 +35,10 @@ const LoginPage = () => {
         remember: true,
       }}
       onFinish={onFinish}
+      style={{width: '300px'}}
       >
 
-      
-      <Row justify='center'>
 
-        <Col span={8}>
 
         <Form.Item
         name="email"
@@ -49,19 +49,12 @@ const LoginPage = () => {
             type: "email"
           },
         ]}
+        
         >
           <Input prefix={<UserOutlined className="site-form-item-icon"/>} placeholder="E-mail" />
 
         </Form.Item>
-        
-        </Col>
 
-      </Row>
-
-
-      <Row justify='center'>
-
-        <Col span={8}>
 
         <Form.Item
         name="password"
@@ -78,15 +71,8 @@ const LoginPage = () => {
             placeholder="Password"
           />
         </Form.Item>
-        
-        
-        
-        </Col>
-
-      </Row>
       
-
-      <Row justify='center'>
+     
 
       <Form.Item>
         <Button type="primary" htmlType="submit" className="login-form-button">
@@ -95,19 +81,16 @@ const LoginPage = () => {
       </Form.Item>
 
 
-      </Row>
-
       
     </Form>
     
     
-    </Col>
 
     
 
 
 
-    </Row>
+    
     
   );
 };
